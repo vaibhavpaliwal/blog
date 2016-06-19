@@ -1,11 +1,20 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+<h1> Show Article </h1>
+<div>
+  <p>
+    <strong>Title:</strong>
+    <%= @article.title %>
+  </p>
+  <p>
+    <strong>Text:</strong>
+    <%= @article.text %>
+  </p>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+  <%= link_to 'Edit', edit_article_path(@article) %>
+  <span class="ml-md">
+    <%= link_to 'Back', articles_path %>
+  </span>
+</div>
+
+<div class="spacer">
+  <%= link_to ' << Go back to home', root_path %>
+</div>
