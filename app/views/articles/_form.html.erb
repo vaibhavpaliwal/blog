@@ -15,13 +15,17 @@
   <% end %>
 
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <strong>
+      <%= f.label :title %><br>
+    </strong>
+    <%= f.text_field :title, size: 40%>
   </p>
 
   <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
+    <strong>
+      <%= f.label :text %><br>
+    </strong>
+    <%= f.text_area :text, cols: 40, rows: 5 %>
   </p>
 
   <p>
